@@ -1,0 +1,268 @@
+ul.menu>li:nth-child(4)>a{
+    color: #080725 !important;
+    font-weight: 600;
+}
+ul.menu>li:nth-child(4){
+    border-bottom: 4px solid #080725;
+}
+
+/* intro  */
+.activity-intro{
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+    margin-bottom: -60px;
+}
+
+.bg-md{
+    height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+}
+.bg-md>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.md{
+    height: 50vh;
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.md>h1{
+    font-size: 50px;
+    padding-top: 50px;
+}
+.md>p>i{
+    font-size: 10px;
+    margin: 20px 3px;
+}
+.md>p>i:nth-child(4){
+    font-size: 20px
+}
+.md>p:last-child{
+    font-size: 20px;
+    font-family: 'Source Serif 4 Semibold';
+}
+
+.gb_intro{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 65px 50px;
+    border: 1px transparent;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+#scrollToTop{
+    display: block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    z-index: 100; 
+    padding: 10px 20px;
+    background-color: #080725;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* content */
+.gb-text{
+    background-color: #080725;
+    border: 1px solid;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* 2 hình đầu */
+.first-sec-text{
+    margin: 30px;
+}
+.first-sec-text>h1{
+    text-align: center;
+}
+.first-sec>img{
+    width: 50%;
+    height: 300px;
+    margin: 20px 5px 0px 30px;
+    border-radius: 10px;
+}
+.second-sec-text{
+    margin: 30px 30px 30px 30px;
+}
+.second-sec>img{
+    width: 50%;
+    height: 300px;
+    margin: 20px 30px 0px 5px;
+    border-radius: 10px;
+}
+
+/* Cựu hs */
+.student>div{
+    justify-content: center;
+}
+.student>div>div{
+    width: 30%;
+    margin: 10px;
+}
+.student img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.student img:hover{
+    transform: scale(1.05);
+}
+.student h3{
+    color: #080725;
+    text-align: center;
+    padding-top: 10px;
+}
+.student h4{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.student p{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* GoldenBoard */
+.student-table{
+    width: 100%;
+}   
+.student-table th, .student-table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+.student-table th {
+    background-color: #080725;
+    color: white;
+    font-weight: bold;
+}
+.student-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 426px) {
+    .bg-md{
+        height: 400px;
+    }
+    .gb_intro{
+        margin: 50px 10px 50px 10px;
+    }
+    .first-sec-text h1{
+        font-size: 15px;
+    }
+    .first-sec-text h4{
+        font-size: 13px;
+    }
+    .first-sec-text p{
+        font-size: 12.85px;
+    }
+
+    .second-sec-text h1{
+        font-size: 15px;
+    }
+    .second-sec-text h4{
+        font-size: 13px;
+    }
+    .second-sec-text p{
+        font-size: 12.85px;
+    }
+}
+
+@media all and (max-width: 435px) and (min-width: 376px) {
+    .bg-md {
+        height: 450px;
+    }
+    .gb_intro{
+        margin: 50px 10px 50px 10px;
+    }
+    main div.flex{
+        display: initial;
+    }
+    .first-sec>h1{
+        text-align: center;
+    }
+    .first-sec-text{
+        margin: 0px 30px;
+    }
+    .first-sec>img{
+        width: 80%;
+        height: auto;
+        margin: 20px 5px 0px 30px;
+        border-radius: 10px;
+    }
+    .second-sec>img{
+       display: none;
+    }   
+    .student>div>div:nth-child(1){
+        width: 93%;
+        margin-top: 10px;
+    }
+    .student>div>div{
+        width: 93%;
+        margin-top: 60px;
+    }  
+}
+
+@media all and (max-width: 376px) and (min-width: 320px) {
+    .bg-md {
+        height: 450px;
+    }
+    .gb_intro{
+        margin: 50px 0;
+    }
+    main div.flex{
+        display: initial;
+    }
+    .first-sec>h1{
+        text-align: center;
+    }
+    .first-sec-text{
+        margin: 0px 30px;
+    }
+    .first-sec>img{
+        width: 80%;
+        height: auto;
+        margin: 20px 5px 0px 30px;
+        border-radius: 10px;
+    }
+    .second-sec>img{
+       display: none;
+    }   
+    .student>div>div:nth-child(1){
+        width: 93%;
+        margin-top: 10px;
+    }
+    .student>div>div{
+        width: 93%;
+        margin-top: 60px;
+    }  
+}
+
+
+
+

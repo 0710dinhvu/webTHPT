@@ -1,0 +1,249 @@
+
+/* Vị trí web */
+ul.menu>li:nth-child(3)>a{
+    color: #080725 !important;
+    font-weight: 600;
+}
+ul.menu>li:nth-child(3){
+    border-bottom: 4px solid #080725;
+}
+
+/* head */
+.activity-intro{
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+    margin-bottom: -70px;
+}
+.bg-md{
+    height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+}
+.bg-md>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.md{
+    height: 50vh;
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.md>h1{
+    font-size: 50px;
+    padding-top: 50px;
+}
+.md>p>i{
+    font-size: 10px;
+    margin: 20px 3px;
+}
+.md>p>i:nth-child(4){
+    font-size: 20px
+}
+.md>p:last-child{
+    font-size: 20px;
+    font-family: 'Source Serif 4 Semibold';
+}
+
+/* main */
+main{
+    background-image: url("../image/lib_bg.jpg");
+    background-size: 20% auto;
+    background-attachment: fixed;
+}
+.intro{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lib_menu_all{
+    background-color: #080725;
+    justify-content: space-between;
+}
+.lib_menu{
+    justify-content: center;
+}
+ul.lib_menu{
+    list-style: none;
+}
+ul.lib_menu>li>a{
+    display: block;
+    padding: 16px;
+    color: white;
+}
+.lib_menu>li>a:hover{
+    background-color: white;
+    color: #080725;
+}
+.search_box {
+    list-style: none;
+}
+.search_box>input{
+    padding: 5px;
+    margin: 10px;
+}
+.search_box input[type=search]{
+    width: 150px; 
+    height: 25px; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-left: 10px; 
+    box-sizing: border-box; 
+}
+
+
+/* Book List */
+section>h2{
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    background-color: #080725;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 10px 0px 10px;
+}
+.book{
+    position: relative;
+    width: 13%;
+    margin: 15px;
+}
+.book img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+    border: 1px solid;
+}
+.book img:hover{
+    transform: scale(1.05);
+}
+.book>div{
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.no{
+    background-color: aliceblue;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: none;
+}
+.no>img{
+    width: 20%;
+}
+.no>div{
+    margin: auto 0;
+    color: blue;
+    font-weight: bold;
+}
+
+#scrollToTop{
+    display: block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    z-index: 100; 
+    padding: 10px 20px;
+    background-color: #080725;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Laptop */
+@media all and (max-width: 1024px) and (min-width: 768px){
+    .bg-md{
+        height: 400px;
+    }
+}
+/* Tablet */
+@media all and (max-width: 770px) and (min-width: 426px){
+    .bg-md{
+        height: 400px;
+    }
+    section>h2{
+        padding: 10px;
+        background-color: #080725;
+        border-radius: 10px 10px 0px 0px;
+        text-align: center;
+        color: white;
+    }
+    .search_box input[type=search]{
+        width: 200px; 
+        height: 25px; 
+        padding: 5px 10px; 
+        font-size: 14px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        margin-left: 10px; 
+        box-sizing: border-box; 
+    }
+    ul.lib_menu{
+        font-size: 13px;
+    }
+    .book {
+        width: 25%;
+        position: relative;
+        margin: 10px;
+    }
+}
+
+/* Mobile L M S*/
+@media all and (max-width: 440px){
+    .bg-md{
+        height: 500px;
+    }
+    section>h2{
+        padding: 10px;
+        background-color: #080725;
+        border-radius: 10px 10px 0px 0px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+    ul.lib_menu{
+        font-size: 12px;
+    }
+    .lib_menu_all{
+        display: block;
+    }
+    .book {
+        width: 40%;
+        position: relative;
+        margin: 10px;
+    }
+    .search_box input[type=search]{
+        width: 250px; 
+        height: 25px; 
+        padding: 5px 10px; 
+        font-size: 14px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        margin-left: 10px; 
+        box-sizing: border-box; 
+        list-style: none;
+    }    
+    .search_box{
+        text-align: center;
+    }
+}

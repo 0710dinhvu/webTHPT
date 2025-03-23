@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/header_footer.css" rel="stylesheet">
+    <link href="CSS/lib.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="J.SCRIPT/header_footer.js"></script>
+    <script src="J.SCRIPT/library.js"></script>
+    <link rel="icon" href="image/logo.png">
+    <title>TRƯỜNG THPT QUỐC TẾ GODOLKIN</title>
+</head>
+<body>
+    <header class="flex">
+        <div class="header flex">
+            <a href="index.html"  class="flex">
+                <img src="image/logo.png" />
+                <div class="name">
+                    TRƯỜNG THPT QUỐC TẾ GODOLKIN <br>GODOLKIN INTERNATIONAL HIGH SCHOOL
+                </div>
+            </a>
+            <div id="bars"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <nav>
+            <ul class="menu flex">
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="event.html">HOẠT ĐỘNG - SỰ KIỆN</a></li>
+                <li><a href="library.html">THƯ VIỆN</a></li>
+                <li><a href="goldenBoard.html">BẢNG VÀNG</a></li>
+                <li><a href="form.html">MỤC KHÁC</a></li>
+                <li class="subs"><a href="#">DIỄN ĐÀN <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="#"><i class="fa-solid fa-calculator"></i>  Diễn Đàn Toán - Tin</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>  Diễn Đàn Ngữ Văn</a></li>
+                        <li><a href="#"><i class="fa-solid fa-language"></i>  Diễn Đàn Ngoại Ngữ</a></li>
+                        <li><a href="#"><i class="fa-solid fa-mountain-city"></i> Diễn Đàn KHXH</a></li>
+                        <li><a href="#"><i class="fa-solid fa-flask"></i>  Diễn Đàn KHTN</a></li>
+                        <li><a href="#"><i class="fa-solid fa-person-running"></i>  Diễn Đàn TDTT - TTDT</a></li>
+                    </ul>
+                </li>
+                <li class="subs"><a href="#">LIÊN HỆ <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sub copy">
+                        <li >
+                            <div>Phòng Giáo Vụ:</div>
+                            <span>098 383 6727</span>
+                            <button><i class="fa-regular fa-copy"></i></button>
+                        </li>
+                        <li >
+                            <div>Phòng Tổng hợp Hành Chính</div>
+                            <span>098 383 7821</span>
+                            <button><i class="fa-regular fa-copy"></i></button>
+                        </li>
+                        <li >
+                            <div>Phòng Tổ chức Kế hoạch</div>
+                            <span>098 383 8246</span>
+                            <button><i class="fa-regular fa-copy"></i></button>
+                        </li>
+                        <li >
+                            <div>Phòng Tài chính - Kế toán</div>
+                            <span>098 383 8246</span>
+                            <button><i class="fa-regular fa-copy"></i></button>
+                        </li>
+                        <li >
+                            <div>Phòng Tài chính - Kế toán</div>
+                            <span>098 383 8246</span>
+                            <button><i class="fa-regular fa-copy"></i></button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="activity-intro">
+        <div class="bg-md">
+            <img src="image/anhdau.jpg" />
+        </div>
+        <div class="md">
+            <h1>Hệ thống thư viện</h1>
+            <p><i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i><i class="fa-solid fa-book-open"></i><i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i></p>
+            <p>Trường luôn tự hào sở hữu một trong những hệ thống Thư viện online hiện đại và cung cấp các nguồn tài liệu học thuật đa dạng, với các tài liệu từ sách giáo khoa, sách tham khảo đến các tài liệu điện tử và phương tiện truyền thông, thư viện trường hỗ trợ tối đa cho quá trình học tập và nghiên cứu của học sinh, góp phần nâng cao chất lượng giáo dục.</p>
+        </div>
+    </div>
+    <main>
+        <div>
+            <section class="lib_menu_all flex">
+                <ul class="lib_menu flex">
+                    <li><a href="#tt">Toán - Tin</a></li>
+                    <li><a href="#nv">Ngữ Văn</a></li>
+                    <li><a href="#khxh">Khoa học xã hội</a></li>
+                    <li><a href="#khtn">Khoa học tự nhiên</a></li>
+                    <li><a href="#sk">Sách khác</a></li>
+                </ul>
+                <li class="search_box">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    <input type="search" placeholder="Tìm kiếm" id="tk" />
+                </li>
+            </section>
+            <section class="books">
+                <div class="no flex">
+                    <img src="image/no-results.png" />
+                    <div>Không tìm thấy kết quả phù hợp</div>
+                </div>
+                <h2 id="tt">Tổ: Toán - Tin</h2>
+                <div class="book-list">
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1moDzWVLj5wbfrmqz0WA4ImLZMfuPrsdq/view" target="_blank"><img src="image/books/toan-tin/so_10.jpg"></a>
+                        <div>MS: TT_DS10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/12CVkSe5vqiJvVINpN8eAFTeDZaiVIEaO/view" target="_blank"><img src="image/books/toan-tin/hinh_10.jpg"></a>
+                        <div>MS: TT_HH10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1mvgC2upmx_Zg7JvXZzNOQOGL6JCV9E7U/view" target="_blank"><img src="image/books/toan-tin/tin_10.jpg"></a>
+                        <div>MS: TT_TH10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1-nmR5sEqhyb8HIqFGHferAco081l0aQ9/view" target="_blank"><img src="image/books/toan-tin/so_11.PNG"></a>
+                        <div>MS: TT_DS11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/10Fws9fbRRgogCtTWzWJmC67oE16pDF9b/view" target="_blank"><img src="image/books/toan-tin/hinh_11.PNG"></a>
+                        <div>MS: TT_HH11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1-8m90l61DaRgChslKg6ENwtl1apeJvbA/view" target="_blank"><img src="image/books/toan-tin/tin_11.PNG"></a>
+                        <div>MS: TT_TH11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1DPMD4_-sWwwhrOS7jbyz2tV433X4F8U4/view" target="_blank"><img src="image/books/toan-tin/so_12.PNG"></a>
+                        <div>MS: TT_GT12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/13H_SOx5co_2PpOz4MtAug2h9qi4hBYRB/view" target="_blank"><img src="image/books/toan-tin/hinh_12.PNG"></a>
+                        <div>MS: TT_HH12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1goJ5mOgQe1T_bffZwUYEtQpXkQUCQjYM/view" target="_blank"><img src="image/books/toan-tin/so_10nc.PNG"></a>
+                        <div>MS: TT_DS10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1luf6SGSv-r4mbQ6UgxQP334QdJmCFFok/view" target="_blank"><img src="image/books/toan-tin/hinh_10nc.PNG"></a>
+                        <div>MS: TT_HH10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1Ygj-Lw40zs6JHfA--VnH_Bs-gk2X_aek/view" target="_blank"><img src="image/books/toan-tin/so_11nc.PNG"></a>
+                        <div>MS: TT_DS11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1I0hQcC0TCWdX3Jms52UnOu3ggTMMNOpS/view" target="_blank"><img src="image/books/toan-tin/hinh_11nc.PNG"></a>
+                        <div>MS: TT_HH11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1yp23Rrz2ECW13cP_mdRqaNWwR2_YFHWM/view" target="_blank"><img src="image/books/toan-tin/so_12nc.PNG"></a>
+                        <div>MS: TT_GT12_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1JNpGLoydtlYsCREtNKnUdxq8Am9CM6cM/view" target="_blank"><img src="image/books/toan-tin/hinh_12nc.PNG"></a>
+                        <div>MS: TT_HH11_nc</div>
+                    </div>
+                    <div class="book">
+                        <img src="image/books/toan-tin/test1.jpg">
+                        <div>MS: TT_50DE</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/toan-tin/c.jpg"></a>
+                        <div>MS: TT_CP</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/toan-tin/py.jpg"></a>
+                        <div>MS: TT_PYP</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/toan-tin/hcj.jpg"></a>
+                        <div>MS: TT_HCJP</div>
+                    </div>
+                </div>
+                <h2 id="nv">Tổ Ngữ văn</h2>
+                <div class="book-list">
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1nt6bjVOzLIm2jKY41vEyCat9ho9Hp-Sa/view" target="_blank"><img src="image/books/van/van1_10.jpg"></a>
+                        <div>MS: NV_NV10_1</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1Sloug8wUQpTTL_rbgKY9RnRk6ANDZuIi/view" target="_blank"><img src="image/books/van/van2_10.jpg"></a>
+                        <div>MS: NV_NV10_2</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/14BZxRgAT5oPQuH3ebwT2y8121dp2uvTs/view" target="_blank"><img src="image/books/van/van1_10nc.jpg"></a>
+                        <div>MS: NV_NV10_1_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1-5bRoAkiyZGKVgHzeH2IlefLGK0oTBsv/view" target="_blank"><img src="image/books/van/van2_10nc.jpg"></a> 
+                        <div>MS: NV_NV10_2_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/15bHVQM7xyC-n4a7BJcHNF9xsA5P3qk0G/view" target="_blank"><img src="image/books/van/van1_11.PNG"></a>
+                        <div>MS: NV_NV11_1</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1dK5xcN0g7aO8AIRo4b_RcxmCxc29-bxQ/view" target="_blank"><img src="image/books/van/van2_11.PNG"></a>
+                        <div>MS: NV_NV11_2</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1t5XqNMjoBM14-lvp4UFI71ZH36W5HLTg/view" target="_blank"><img src="image/books/van/van1_11nc.PNG"></a>
+                        <div>MS: NV_NV11_1_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1kbM9epaBFeYMPwSSgOEE7_E7CfJLTGJA/view" target="_blank"><img src="image/books/van/van2_11nc.PNG"></a>
+                        <div>MS: NV_NV11_2_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1WaqbYiffSqx2cxt9aVxqUAUCS345BtPv/view" target="_blank"><img src="image/books/van/van1_12.PNG"></a>
+                        <div>MS: NV_NV12_1</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1tvRDzRLiR5dQxQNCBKr5tNCkvahKsZSp/view" target="_blank"><img src="image/books/van/van2_12.PNG"></a>
+                        <div>MS: NV_NV12_2</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/16kcVhHFH2a_iTK5-m2GVfzmgP2GXGr-a/view" target="_blank"><img src="image/books/van/van1_12nc.PNG"></a>
+                        <div>MS: NV_NV12_1_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/van/van2_12nc.PNG"></a>
+                        <div>MS: NV_NV12_2_nc</div>
+                    </div>
+                </div>
+                <h2 id="khxh">Tổ: Khoa học Xã Hội</h2>
+                <div class="book-list">
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1tgg0FVht960ruHp5USVeetL71cuGsXEW/view" target="_blank"><img src="image/books/khxh/su_10.jpg"></a>
+                        <div>MS: KHXH_LS10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1qIxiKzZcVLemK8zQOXE-VnCy93CSluLd/view" target="_blank"><img src="image/books/khxh/su_11.PNG"></a>
+                        <div>MS: KHXH_LS11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1CigjNB3RfaS4ZyRqvIepOAXtU1p-6nBv/view" target="_blank"><img src="image/books/khxh/su_11nc.PNG"></a>
+                        <div>MS: KHXH_LS11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1QM4uruCJV9CPLc8jDLVYJJ17cE9PGj4z/view" target="_blank"><img src="image/books/khxh/su_12.PNG"></a>
+                        <div>MS: KHXH_LS12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1eSMQsIvk6u8pNOyqi2FQJkGpkZhukkGA/view" target="_blank"><img src="image/books/khxh/su_12nc.PNG"></a>
+                        <div>MS: KHXH_LS12_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1spTqP3YCYYyeRyRT8Nsp8cdJVVxk90mA/view" target="_blank"><img src="image/books/khxh/dia_10.jpg"></a>
+                        <div>MS: KHXH_DL10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/16JBTlav9KG3obNXGFQqh7Ux34tHZfZTZ/view" target="_blank"><img src="image/books/khxh/dia_10nc.PNG"></a>
+                        <div>MS: KHXH_DL10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1RH_Jkei0lkXCLe8etqwOVSswZlts-3vL/view" target="_blank"><img src="image/books/khxh/dia_11.PNG"></a>
+                        <div>MS: KHXH_DL11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1v0Wg5iKi0yrhZuR83xR4pRQf4dKfYQpE/view" target="_blank"><img src="image/books/khxh/dia_11nc.PNG"></a>
+                        <div>MS: KHXH_DL11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1k0aY8hF74U53SLCl9TsoWhrdRUG2BPgK/view" target="_blank"><img src="image/books/khxh/dia_12.PNG"></a>
+                        <div>MS: KHXH_DL12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1aE82PY-Tzke_sGe-YSuo45H-D5bSvO2i/view" target="_blank"><img src="image/books/khxh/dia_12nc.PNG"></a>
+                        <div>MS: KHXH_DL12_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/19HfAWVsbad4prmYpUK0Ch68OQcV1TEnt/view" target="_blank"><img src="image/books/khxh/gdcd_10.PNG"></a>
+                        <div>MS: KHXH_CD10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1doHBIl1PyQfh0Vx5QoHATfgZfqX536Qx/view?usp=sharing" target="_blank"><img src="image/books/khxh/gdcd_11.PNG"></a>
+                        <div>MS: KHXH_CD11</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/khxh/test.jpg"></a>
+                        <div>MS: KHXH_DE2021</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/khxh/test2.jpg"></a>
+                        <div>MS: KHXH_DE1920</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/khxh/test3.jpg"></a>
+                        <div>MS: KHXH_DE2021_nc</div>
+                    </div>
+                </div>
+                <h2 id="khtn">Tổ: Khoa học Tự Nhiên</h2>
+                <div class="book-list">
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1ejv0d-d5pNdNffUsT53XT2eH1_LkWUbJ/view" target="_blank"><img src="image/books/khtn/li_10.jpg"></a>
+                        <div>MS: KHTN_VL10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1OHWt76KyuQ1ygD87i3eW1eyZTBihE8-D/view" target="_blank"><img src="image/books/khtn/li_10nc.PNG"></a>
+                        <div>MS: KHTN_VL10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1onis7utNp1PT8Ywiyae43gSwccm_p8MY/view" target="_blank"><img src="image/books/khtn/li_11.PNG"></a>
+                        <div>MS: KHTN_VL11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1IA15sPGt9kCsC3sAJIwh_O_TGE3z3ZDA/view" target="_blank"><img src="image/books/khtn/li_11nc.PNG"></a>
+                        <div>MS: KHTN_VL11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1RFjrIHakeVqhNvTySk0BKU4RDn_pT2U7/view" target="_blank"><img src="image/books/khtn/li_12.PNG"></a>
+                        <div>MS: KHTN_VL12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/10QyTW-g_KcqwfYFH5dVnJizDeA0vvA_u/view" target="_blank"><img src="image/books/khtn/li_12nc.PNG"></a>
+                        <div>MS: KHTN_VL12_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1THjNlBCGvSOC8vvb1nPbCZeUlNt7hZ4x/view" target="_blank"><img src="image/books/khtn/hoa_10.jpg"></a>
+                        <div>MS: KHTN_HH10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1luf6SGSv-r4mbQ6UgxQP334QdJmCFFok/view" target="_blank"><img src="image/books/khtn/hoa_10nc.PNG"></a>
+                        <div>MS: KHTN_HH10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1j3d7JK7wwV_zcZrAqkfcp6HBTq1qfISq/view" target="_blank"><img src="image/books/khtn/hoa_11.PNG"></a>
+                        <div>MS: KHTN_HH11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1iqjHSJm_mLmYV1f_3ukODME8p7Cs58NL/view" target="_blank"><img src="image/books/khtn/hoa_11nc.PNG"></a>
+                        <div>MS: KHTN_HH11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1V9GJfVAOnOOm_ox-lXBNzp_NbLi_cLg_/view" target="_blank"><img src="image/books/khtn/hoa_12.PNG"></a>
+                        <div>MS: KHTN_HH12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1oabFdUvh6RPQ3sLRnkyP1VAVCrNJrIXW/view" target="_blank"><img src="image/books/khtn/hoa_12nc.PNG"></a>
+                        <div>MS: KHTN_HH12_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1GG9JWR5iS4GDRmZznkmpS90W5P03I7HH/view" target="_blank"><img src="image/books/khtn/sinh_10.jpg"></a>
+                        <div>MS: KHTN_SH10</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1-83atgNDDxqHagL2QHRds8cA8i4Lc87D/view" target="_blank"><img src="image/books/khtn/sinh_10nc.PNG"></a>
+                        <div>MS: KHTN_SH10_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1lv9JT-NeJE4htDHNsMEyy2p1bvnY66xL/view" target="_blank"><img src="image/books/khtn/sinh_11.PNG"></a>
+                        <div>MS: KHTN_SH11</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1Koe3TDX6GUAPmUijXkrdPZ8KlvBleF76/view" target="_blank"><img src="image/books/khtn/sinh_11nc.PNG"></a>
+                        <div>MS: KHTN_SH11_nc</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1LYZ9bJINupFBYxna9hcZ4_IE0JF6HLUq/view" target="_blank"><img src="image/books/khtn/sinh_12.PNG"></a>
+                        <div>MS: KHTN_SH12</div>
+                    </div>
+                    <div class="book">
+                        <a href="https://drive.google.com/file/d/1gT64hirH6ifWCzC46m6xFO-xaOYMyOfF/view" target="_blank"><img src="image/books/khtn/sinh_12nc.PNG"></a>
+                        <div>MS: KHTN_SH12_nc</div>
+                    </div>
+                </div>
+                <h2 id="sk">Các loại Sách khác</h2>
+                <div class="book-list">
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b1.jpg"></a>
+                        <div>MS: K_0001</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b2.jpg"></a>
+                        <div>MS: K_0002</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b3.jpg"></a>
+                        <div>MS: K_0003</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b4.jpg"></a>
+                        <div>MS: K_0004</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b5.jpg"></a>
+                        <div>MS: K_0005</div>
+                    </div>
+                    <div class="book">
+                        <a href="#"><img src="image/books/diff/b6.jpg"></a>
+                        <div>MS: K_0006</div>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+        </div>
+    </main>
+    <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <footer class="flex">
+        <div class="f_left">
+            <h1>TRƯỜNG THPT QUỐC TẾ GODOLKIN</h1>
+            <h2>GODOLKIN INTERNATIONAL HIGH SCHOOL</h2>
+            <ul>
+                <li><i class="fa-solid fa-globe"></i> https://gih.edu.vn/</li>
+                <li><i class="fa-regular fa-envelope"></i> ctsv@gih.edu.vn</li>
+                <li><i class="fa-solid fa-phone"></i> 079 123 4567 - 079 234 5678</li>
+                <li><i class="fa-solid fa-house"></i> Trụ Sở Chính: Khu dân cư Nhơn Đức, huyện Nhà Bè, TP.HCM</li>
+            </ul>
+            <div class="social flex">
+                <p>Kết nối</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="image/social1.png" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image/social2.png" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image/social3.png" /></a>
+                <a href="https://x.com/" target="_blank"><img src="image/social4.png" /></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="image/social5.png" /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="image/social6.png" /></a>
+            </div>
+        </div>
+        <div class="f_right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.764100538625!2d106.68809457575938!3d10.675409961047427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1723477096112!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
